@@ -40,14 +40,12 @@ body {
 /* Шапка сайту */
 .header {
     display: block;
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .main-nav {
     display: flex;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 .logo {
     color: var(--accent-text-color);
@@ -68,7 +66,6 @@ body {
 .site-nav {
     display: flex;
     margin-left: 93px;
-    margin-right: 344px;
 }
 .site-nav .item + .item {
     margin-left: 50px;
@@ -95,10 +92,12 @@ body {
     color: var(--accent-text-color);
 }
 /* Contacts-nav */
+.main-contacts {
+    display: flex;
+    margin-left: auto;
+}
 .contacts-nav {
     display: flex;
-    margin-left: 0;
-
 }
 .contacts-nav .item + .item {
     margin-left: 50px;
@@ -123,11 +122,16 @@ body {
 .hero {
     background: #2f303a;
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
-.hero-title{
+.hero-title {
     margin-top: 0;
+    margin-right: auto;
     margin-bottom: 30px;
-    
+    margin-left: auto; 
+    width: 696px;
+       
     color: var(--white-text-color);
 
     font-weight: 900;
@@ -183,8 +187,14 @@ body {
 }
 
 /* Наші переваги */
+.invisible {
+    display: none;
+}
 .benefits {
     display: flex;
+}
+.benefits .item {
+    width: 270px;
 }
 .benefits .item + .item {
     margin-left: 30px;
@@ -231,16 +241,14 @@ body {
 /* Наша команда */
 .team {
     display: flex;
-    padding-top: 0;
-    padding-bottom: 0;
+    
     text-align: center;
-
     background: var(--additional-bg-color);
 }
 .team-list {
     display: flex;
-    padding-bottom: 94px; 
-    }
+    
+}
 .team-list .item {
     background-color: var(--white-text-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -250,6 +258,11 @@ body {
 }
 .team-list .item + .item {
     margin-left: 30px;
+ }
+ .team-list .info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
  }
 
 .team-list .title {
@@ -266,7 +279,7 @@ body {
 }
 .team-list .text {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0;
 
     color: var(--additional-text-color);
 
@@ -280,10 +293,12 @@ body {
 /* Підвал */
 .footer {
     background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer .logo {
     display: block;
-    padding-top: 60px;
+    margin-bottom: 20px;
 
     color: var(--accent-text-color);
 }
@@ -291,8 +306,7 @@ body {
     color: var(--white-text-color);
 }
 .footer-nav {
-    margin-top: 20px;
-    padding-bottom: 60px;
+    
 }
 .footer-nav .item + .item {
     margin-top: 9px;
@@ -333,7 +347,7 @@ body {
 }
 .portfolio-nav {
     display: flex;
-    padding-bottom: 34px;
+    margin-bottom: 50px;
     justify-content: center;
     align-items: center;
 }
@@ -402,15 +416,14 @@ body {
 
 .portfolio-works .info {    
     border: 1px solid #EEEEEE;
+    padding: 20px 24px; 
 }
 .portfolio-works .link {    
     text-decoration: none;
 }
 .portfolio-works .title {
-    margin-top: 20px;
-    margin-right: 24px;
-    margin-bottom: 4px;  
-    margin-left: 24px;
+    margin-top: 0;
+    margin-bottom: 4px;
 
     color: var(--primary-text-color);
     font-weight: 700;
@@ -420,9 +433,7 @@ body {
 }
 .portfolio-works .text {
     margin-top: 0;
-    margin-right: 24px;
-    margin-bottom: 20px;
-    margin-left: 24px;
+    margin-bottom: 0;
 
     color: var(--additional-text-color);
     font-weight: 400;
